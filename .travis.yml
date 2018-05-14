@@ -32,6 +32,3 @@ after_success:
 deploy:
   provider: script
   script: deployment/deploy.sh
-  on:
-    tags: true
-    condition: "${TRAVIS_TAG} =~ ^rel.*$"
