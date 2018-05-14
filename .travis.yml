@@ -31,4 +31,4 @@ after_success:
   fi
 deploy:
   provider: script
-  script: deployment/deploy.sh
+  script: chmod +x deployment/deploy.sh && deployment/deploy.sh
